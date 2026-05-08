@@ -1,8 +1,5 @@
 const prompt = require("prompt-sync")();
+const length = prompt("Enter length of triangle: ");
 
-const lenght = Number(prompt("Enter number in lenght: "));
-
-const area = 0.4330 * lenght * lenght
-
-console.log(area)
-
+area_of_eq_traingle = Math.sqrt(3)/4 * length ** 2
+console.log(area_of_eq_traingle.toFixed(3))

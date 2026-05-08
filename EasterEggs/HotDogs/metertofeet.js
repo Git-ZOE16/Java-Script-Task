@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")();
+const meter = prompt("Convert meter to feet: ");
 
-const meters = Number(prompt("Enter number in meters: "));
+feet_converter = meter * 3.2786
+console.log(feet_converter.toFixed(3))
 
-console.log(meterToFeetConverter = meters * 3.2786)
 
