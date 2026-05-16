@@ -1,13 +1,12 @@
-function getInfo() {
-
 const employee = {
     name: "Dapo",
     role: "engineer",
     salary: 50000,
- };   
-        return employee.salary;
+ }; 
+ function getInfo(user) {
+    return user.salary;
 }
 
-console.log(getInfo());
+console.log(getInfo(employee));
  
 
