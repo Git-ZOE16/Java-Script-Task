@@ -48,8 +48,57 @@ function subtract(firstNumber, secondNumber){
 
 }
 
+function multiply(firstNumber, secondNumber){
+    return firstNumber * secondNumber;
 
-module.exports = { add, subtract}
+
+}
+
+function divide(firstNumber, secondNumber){
+    return firstNumber / secondNumber;
+
+
+}
+
+function isEven(number){
+    return number % 2 === 0;
+
+
+}
+
+function isOdd(number){
+    return number % 2 === 1;
+
+
+}
+
+function isPalindrome(number){
+
+    let originalStr = number.toString();
+    
+    let reversedStr = originalStr.split('').reverse().join('');
+    
+        return originalStr === reversedStr;
+
+
+}
+
+function isPrime(number){
+
+    if(number <= 1) return false;
+    if(number === 2) return true;
+    if(number % 2 === 0) return false;
+    
+        for (let i = 3; i <= Math.sqrt(number); i += 2){
+                                    if (number % i === 0){
+                                        return false
+                                    }
+                              }
+
+    return true;
+}
+
+module.exports = { add, subtract, multiply, divide,isEven, isOdd, isPalindrome, isPrime}
 
 
 

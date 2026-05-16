@@ -37,7 +37,7 @@
 //CALL YOUR FUNCTION AND RUN YOUR TEST(npm test)
 
 
-const { add, subtract } = require('./arithemetic')
+const { add, subtract, multiply, divide, isEven, isOdd, isPalindrome, isPrime} = require('./arithemetic')
 
 
 test("test addition of two positive numbers", () => {
@@ -102,9 +102,95 @@ expect(subtract(firstNumber, secondNumber)).toBe(-5)
 })
 
 
+test(" test multiplication of two numbers", () => {
+
+ let firstNumber = 10;
+    
+ let secondNumber = 20;
+
+expect(multiply(firstNumber, secondNumber)).toBe(200)
 
 
+})
 
 
+test(" test that two nagative numbers multiplication gives accurate value", () => {
+
+ let firstNumber = -10;
+    
+ let secondNumber = -20;
+
+expect(multiply(firstNumber, secondNumber)).toBe(200)
+
+
+})
+
+
+test(" test division of two numbers", () => {
+
+ let firstNumber = 100;
+    
+ let secondNumber = 5;
+
+expect(divide(firstNumber, secondNumber)).toBe(20)
+
+
+})
+
+test(" test that a number is even number", () => {
+
+    //Arrange
+ let number = 8;
+ 
+    //Act
+ let result = isEven(number);
+ 
+    //Assert
+    
+expect(result).toBe(true);
+
+
+})
+
+test(" test that a number is odd number", () => {
+
+    //Arrange
+ let number = 7;
+ 
+    //Act
+ let result = isOdd(number);
+ 
+    //Assert
+    
+expect(result).toBe(true);
+
+
+})
+
+test(" test that a number is palindrome", () => {
+
+    expect(isPalindrome(121)).toBe(true);
+ 
+ 
+    expect(isPalindrome(123)).toBe(false)
+    
+expect(isPalindrome(123)).toBe(false);
+
+
+});
+
+
+test(" test that a number is prime number", () => {
+
+    expect(isPrime(-5)).toBe(false);
+ 
+ 
+    expect(isPrime(11)).toBe(true)
+    
+    
+    expect(isPrime(9)).toBe(false)
+    
+
+});
 
 
