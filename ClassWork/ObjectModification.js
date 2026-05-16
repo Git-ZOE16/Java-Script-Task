@@ -54,7 +54,7 @@
  
 // console.log(user)
  
- //HOW TO UPDATE OBJECT by editiing only the age
+ //HOW TO UPDATE OBJECT by editing only the age
 
 //let user = {
    // "firstName": ["oluyemi", "zoe", "isire"],
@@ -93,7 +93,7 @@
  
 // console.log(age)
  
- // HOW TO COPY OBJECT
+ // HOW TO COPY MERGE OBJECT
  
  let person = {
     "firstName": "Miracle",
