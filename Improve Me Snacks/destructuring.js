@@ -5,10 +5,9 @@ function getInfo() {
         role: "engineer",
         salary: 50000,
         department: "Tech"
-    }
+    };
+    return employee;
+    } 
 
-    const {name , salary} = employee;
-    console.log(name , salary);
-} 
-
-getInfo();
+console.log(getInfo().name,
+getInfo().salary);
